@@ -66,7 +66,7 @@ docker run -d \
 ```
 
 
-# Iot_SData_imulator
+# Iot_Data_Simulator
 
 Instruction inside the folder
 
