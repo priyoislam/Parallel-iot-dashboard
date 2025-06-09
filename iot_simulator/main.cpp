@@ -20,8 +20,7 @@ ConcurrentQueue<Message> message_queue;
 
 void process_data(const Message& msg) {
     std::cout << "[Thread " << std::this_thread::get_id() << "] "
-              << "Device: " << msg.device_id
-              << " | Temp: " << msg.payload["temperature"].asFloat()
+              <<  msg.payload
               << std::endl;
 }
 
@@ -70,5 +69,6 @@ int main() {
     }
 
     pool.join(); // never reached in this example
+
     return 0;
 }

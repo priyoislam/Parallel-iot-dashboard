@@ -9,8 +9,9 @@ find_package(PahoMqttCpp REQUIRED)
 # Find JsonCpp library
 #find_package(JsonCpp REQUIRED)
 
+find_package(PkgConfig REQUIRED)
 
-
+pkg_check_modules(JSONCPP REQUIRED jsoncpp)
 # Source files
 set(SOURCES
     main.cpp
@@ -20,6 +21,7 @@ set(SOURCES
 
 add_executable(mqtt_subscriber ${SOURCES})
 
+include_directories(${JSONCPP_INCLUDE_DIRS})
 # Link libraries
 target_link_libraries(mqtt_subscriber
     PahoMqttCpp::paho-mqttpp3
