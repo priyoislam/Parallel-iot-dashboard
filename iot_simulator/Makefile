@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mqtt_subscriber
+# Target rules for targets named prll_app
 
 # Build rule for target.
-mqtt_subscriber: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mqtt_subscriber
-.PHONY : mqtt_subscriber
+prll_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prll_app
+.PHONY : prll_app
 
 # fast build rule for target.
-mqtt_subscriber/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mqtt_subscriber.dir/build.make CMakeFiles/mqtt_subscriber.dir/build
-.PHONY : mqtt_subscriber/fast
+prll_app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prll_app.dir/build.make CMakeFiles/prll_app.dir/build
+.PHONY : prll_app/fast
+
+connectdb.o: connectdb.cpp.o
+.PHONY : connectdb.o
+
+# target to build an object file
+connectdb.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prll_app.dir/build.make CMakeFiles/prll_app.dir/connectdb.cpp.o
+.PHONY : connectdb.cpp.o
+
+connectdb.i: connectdb.cpp.i
+.PHONY : connectdb.i
+
+# target to preprocess a source file
+connectdb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prll_app.dir/build.make CMakeFiles/prll_app.dir/connectdb.cpp.i
+.PHONY : connectdb.cpp.i
+
+connectdb.s: connectdb.cpp.s
+.PHONY : connectdb.s
+
+# target to generate assembly for a file
+connectdb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prll_app.dir/build.make CMakeFiles/prll_app.dir/connectdb.cpp.s
+.PHONY : connectdb.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mqtt_subscriber.dir/build.make CMakeFiles/mqtt_subscriber.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prll_app.dir/build.make CMakeFiles/prll_app.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +166,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mqtt_subscriber.dir/build.make CMakeFiles/mqtt_subscriber.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prll_app.dir/build.make CMakeFiles/prll_app.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +174,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mqtt_subscriber.dir/build.make CMakeFiles/mqtt_subscriber.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prll_app.dir/build.make CMakeFiles/prll_app.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +185,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mqtt_subscriber"
+	@echo "... prll_app"
+	@echo "... connectdb.o"
+	@echo "... connectdb.i"
+	@echo "... connectdb.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

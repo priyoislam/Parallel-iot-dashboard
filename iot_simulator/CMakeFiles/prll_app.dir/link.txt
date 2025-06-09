@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/prll_app.dir/link.d CMakeFiles/prll_app.dir/main.cpp.o CMakeFiles/prll_app.dir/connectdb.cpp.o -o prll_app  /usr/lib/libpaho-mqttpp3.so.1.5.3 -ljsoncpp -lpthread /usr/lib/libcurl.so /usr/lib/libpaho-mqtt3as.so.1.3.14 /usr/lib/libssl.so /usr/lib/libcrypto.so -lc -ldl -lrt -lanl -lpthread /usr/lib/libcurl.so

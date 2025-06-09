@@ -5,6 +5,7 @@
 #include "mqtt/async_client.h"
 #include "thread_pool.hpp"
 #include "concurrent_queue.hpp"
+#include "connectdb.hpp"
 
 const std::string SERVER_ADDRESS{"tcp://localhost:1883"};
 const std::string CLIENT_ID{"cpp_subscriber"};
@@ -44,6 +45,12 @@ public:
 };
 
 int main() {
+
+      if (!test_influxdb_connection()) {
+        std::cerr << "Exiting: could not connect to InfluxDB.\n";
+        return 1;
+    }
+
     // Start thread pool
     ThreadPool pool;
     pool.start(NUM_WORKERS, [] {

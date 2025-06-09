@@ -332,6 +332,7 @@ mqtt_subscriber: /usr/lib/Scrt1.o \
   /usr/lib/libdl.a \
   /usr/lib/libgcc_s.so \
   /usr/lib/libgcc_s.so.1 \
+  /usr/lib/libjsoncpp.so \
   /usr/lib/libm.so \
   /usr/lib/libpthread.a \
   /usr/lib/librt.a \
@@ -1020,6 +1021,8 @@ concurrent_queue.hpp:
 /usr/include/c++/15.1.1/bits/sstream.tcc:
 
 /usr/include/c++/15.1.1/thread:
+
+/usr/lib/libjsoncpp.so:
 
 /usr/include/c++/15.1.1/tuple:
 
