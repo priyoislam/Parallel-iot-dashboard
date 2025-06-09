@@ -42,10 +42,10 @@ Our system mimics a real-world smart city by simulating thousands of IoT sensors
 - Mosquitto MQTT broker installed and running locally
 - Python 3 with Plotly Dash for the dashboard component
 
-# Mosquitto MQTT Docker Setup
-### Pull the Official Image
+# Mosquitto MQTT and Inffluxdv Setup
+
 ```bash
-docker pull eclipse-mosquitto
+cd broker&db
 
 ```
 ### Start Mosquitto with Anonymous Access
@@ -53,16 +53,11 @@ docker pull eclipse-mosquitto
 # Create config directory
 mkdir -p ./mosquitto/config
 
-# Generate minimal config (open access)
 echo -e 'listener 1883 0.0.0.0\nallow_anonymous true' > ./mosquitto/config/mosquitto.conf
 ```
-### Run container with config volume
+### Run container 
 ```bash
-docker run -d \
-  -p 1883:1883 \
-  -v $(pwd)/mosquitto/config:/mosquitto/config \
-  --name mosquitto \
-  eclipse-mosquitto
+docker-compose up -d
 ```
 
 
