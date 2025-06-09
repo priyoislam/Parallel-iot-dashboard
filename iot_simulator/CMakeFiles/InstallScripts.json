@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

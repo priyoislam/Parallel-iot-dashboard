@@ -1,1 +1,3 @@
 IoT-data-simulator/.env
+broker&db/mosquitto/data/mosquitto.db
+broker&db/mosquitto/log/
