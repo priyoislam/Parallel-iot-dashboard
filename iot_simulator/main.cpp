@@ -19,11 +19,11 @@ struct Message {
 
 ConcurrentQueue<Message> message_queue;
 
-void process_data(const Message& msg) {
-    std::cout << "[Thread " << std::this_thread::get_id() << "] "
-              <<  msg.payload
-              << std::endl;
-}
+// void process_data(const Message& msg) {
+//     std::cout << "[Thread " << std::this_thread::get_id() << "] "
+//               <<  msg.payload
+//               << std::endl;
+// }
 
 class Callback : public virtual mqtt::callback {
 public:
