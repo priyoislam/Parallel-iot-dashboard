@@ -227,6 +227,9 @@ CURL_LIBRARY_DEBUG:FILEPATH=CURL_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 CURL_LIBRARY_RELEASE:FILEPATH=/usr/lib/libcurl.so
 
+//The directory containing a CMake configuration file for InfluxDB.
+InfluxDB_DIR:PATH=InfluxDB_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for JsonCpp.
 JsonCpp_DIR:PATH=JsonCpp_DIR-NOTFOUND
 
