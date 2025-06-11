@@ -17,22 +17,35 @@ services:
 
   # InfluxDB
   influxdb:
-    image: influxdb:2.7
+    image: influxdb:1.8
     container_name: influxdb
     ports:
       - "8086:8086"
     environment:
-      - DOCKER_INFLUXDB_INIT_MODE=setup
-      - DOCKER_INFLUXDB_INIT_USERNAME=admin
-      - DOCKER_INFLUXDB_INIT_PASSWORD=password123
-      - DOCKER_INFLUXDB_INIT_ORG=myorg
-      - DOCKER_INFLUXDB_INIT_BUCKET=sensor_data
-      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=my-super-secret-auth-token
+      - INFLUXDB_DB=sensor_data
+      - INFLUXDB_ADMIN_USER=admin
+      - INFLUXDB_ADMIN_PASSWORD=password123
     volumes:
-      - influxdb_data:/var/lib/influxdb2
-      - influxdb_config:/etc/influxdb2
+      - influxdb_data:/var/lib/influxdb
     networks:
       - iot-network
+
+     # Grafana
+  grafana:
+    image: grafana/grafana:latest # You can choose a specific version or 'latest'
+    container_name: grafana
+    ports:
+      - "3000:3000" # Grafana's default port
+    environment:
+      # Optional: Set admin user and password for initial setup
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana_data:/var/lib/grafana # Persist Grafana data
+    networks:
+      - iot-network
+    depends_on:
+      - influxdb #
 
 
   
@@ -43,3 +56,4 @@ networks:
 volumes:
   influxdb_data:
   influxdb_config:
+  grafana_data:
