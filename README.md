@@ -9,7 +9,7 @@ Moinul Laskar (2404679) & Nicolas Ragnell (39168)
 
 As smart cities evolve, efficient and scalable monitoring of environmental parameters such as temperature, humidity, and noise is essential. This project aims to build a system that simulates multiple IoT devices generating sensor data in parallel, processes the data concurrently, and visualizes it in real-time through an interactive dashboard.
 
-Our system mimics a real-world smart city by simulating thousands of IoT sensors distributed across different city regions. The project emphasizes **parallel computing** to handle simultaneous data acquisition and processing, enabling scalability and timely insights.
+Our system mimics a real-time smart city by simulating thousands of IoT sensors distributed across different city regions. The project emphasizes **parallel computing** to handle simultaneous data acquisition and processing, enabling scalability and timely insights.
 
 ---
 
@@ -35,15 +35,8 @@ Our system mimics a real-world smart city by simulating thousands of IoT sensors
 
 ## Getting Started
 
-### Prerequisites
 
-- C++17 compatible compiler
-- [Paho MQTT C++ client library](https://github.com/eclipse/paho.mqtt.cpp)
-- [JsonCpp](https://github.com/open-source-parsers/jsoncpp)
-- Mosquitto MQTT broker installed and running locally
-- Python 3 with Plotly Dash for the dashboard component
-
-# Mosquitto MQTT(with Anonymous Access ) and Inffluxdv Setup
+# Mosquitto MQTT(with Anonymous Access ), InfluxDB and Grafana Setup
 
 ```bash
 # Create config directory
@@ -64,7 +57,7 @@ docker-compose up -d
 
 ```bash
 cd parellel_parser
-cmake . .
+cmake ..    #as Cmakelist in root folder
 make
 ./prll_app
 
