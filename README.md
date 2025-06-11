@@ -16,19 +16,20 @@ Our system mimics a real-world smart city by simulating thousands of IoT sensors
 ## Features
 
 - **IoT Device Simulation:** Simulates numerous IoT sensors generating data streams in parallel.
-- **Parallel Data Processing:** Utilizes multi-threading (POSIX Threads or OpenMP) to process incoming sensor data efficiently.
+- **Parallel Data Processing:** Utilizes a custom C++ thread pool (based on std::thread) to process incoming sensor data concurrently, enabling efficient parsing, transformation, and storage in InfluxDB."
 - **MQTT Messaging:** Communicates sensor data using an MQTT broker to simulate real-world IoT communication.
-- **Real-Time Dashboard:** Visualizes processed data interactively using Plotly Dash, providing insights and analytics for smart city management.
+- **Real-Time Dashboard:** Visualizes processed data interactively using Grafana, providing insights and analytics for smart city management.
 
 ---
 
 ## Tools and Technologies
 
 - **Programming Language:** C++
-- **Parallelism:** POSIX Threads or OpenMP
-- **IoT Simulation:** (To be decided)
-- **Message Broker:** MQTT (Mosquitto recommended)
-- **Dashboard Platform:** Plotly Dash (Python)
+- **Parallelism:** Threads 
+- **IoT Simulation:** IBA-iot-data-simulator
+- **Message Broker:** MQTT (Mosquitto)
+- **Database:** InfluxDB
+- **Dashboard Platform:** Grafana
 
 ---
 
