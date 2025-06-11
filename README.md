@@ -62,7 +62,8 @@ docker-compose up -d
 # Iot_Data_Simulator
 
 ```bash
-docker-compose pull
-docker-compose up
+cmake . .
+make
+./prll_app
 
 ```

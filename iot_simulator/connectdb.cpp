@@ -55,7 +55,10 @@ bool test_influxdb_connection() {
     return success;
 }
 
+
+
 // Write Line Protocol data to InfluxDB 1.x
+
 bool write_influx_data(const std::string& line_protocol_data) {
     CURL* curl = curl_easy_init();
     if (!curl) {
@@ -63,13 +66,18 @@ bool write_influx_data(const std::string& line_protocol_data) {
         return false;
     }
 
-    // InfluxDB 1.x write URL with DB name, username, password
-    std::ostringstream url_stream;
-    url_stream << INFLUXDB_URL << "?db=" << INFLUXDB_DB
-               << "&u=" << INFLUXDB_USER << "&p=" << INFLUXDB_PASS;
+    // InfluxDB 1.8 write endpoint (no org/bucket/token!)
+    std::string full_url = "http://localhost:8086/write?db=" + INFLUXDB_DB +
+                           "&u=" + INFLUXDB_USER + "&p=" + INFLUXDB_PASS +
+                           "&precision=ns";
 
-    std::string full_url = url_stream.str();
+    // Show what we're sending
+    std::cout << "\n--- InfluxDB 1.8 Write Request ---\n";
+    std::cout << "POST " << full_url << "\n";
+    std::cout << "Payload (Line Protocol):\n" << line_protocol_data << "\n";
+    std::cout << "------------------------------\n";
 
+    // Set curl options
     curl_easy_setopt(curl, CURLOPT_URL, full_url.c_str());
     curl_easy_setopt(curl, CURLOPT_POST, 1L);
     curl_easy_setopt(curl, CURLOPT_POSTFIELDS, line_protocol_data.c_str());
@@ -77,7 +85,7 @@ bool write_influx_data(const std::string& line_protocol_data) {
     curl_easy_setopt(curl, CURLOPT_NOSIGNAL, 1L);
 
     if (INFLUXDB_DEBUG_VERBOSE) {
-        curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
+        curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L); // Enable real-time HTTP logging
     }
 
     struct curl_slist* headers = nullptr;
@@ -94,14 +102,14 @@ bool write_influx_data(const std::string& line_protocol_data) {
 
     if (res == CURLE_OK) {
         curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &http_code);
-        if (http_code == 204) {
+        if (http_code >= 200 && http_code < 300) {
             success = true;
-            std::cout << "[InfluxDB Write] Success (HTTP 204)\n";
+            std::cout << "[InfluxDB Write] Success (HTTP " << http_code << ")\n";
         } else {
-            std::cerr << "[InfluxDB Write] Failed with HTTP code " << http_code << ". Response: " << readBuffer << "\n";
+            std::cerr << "[InfluxDB Write] Failed (HTTP " << http_code << "): " << readBuffer << "\n";
         }
     } else {
-        std::cerr << "[InfluxDB Write] Error: " << curl_easy_strerror(res) << "\n";
+        std::cerr << "[InfluxDB Write] Curl error: " << curl_easy_strerror(res) << "\n";
     }
 
     curl_slist_free_all(headers);
