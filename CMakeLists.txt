@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Find Paho MQTT C++ library
 find_package(PahoMqttCpp REQUIRED)
 # Find JsonCpp library
-#find_package(JsonCpp REQUIRED)
+
 find_package(PkgConfig REQUIRED)
 
 pkg_check_modules(JSONCPP REQUIRED jsoncpp)
