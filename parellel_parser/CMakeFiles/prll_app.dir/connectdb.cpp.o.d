@@ -1,7 +1,7 @@
 CMakeFiles/prll_app.dir/connectdb.cpp.o: \
- /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/connectdb.cpp \
+ /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/connectdb.cpp \
  /usr/include/stdc-predef.h \
- /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/connectdb.hpp \
+ /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/connectdb.hpp \
  /usr/include/c++/15.1.1/string \
  /usr/include/c++/15.1.1/bits/requires_hosted.h \
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h \

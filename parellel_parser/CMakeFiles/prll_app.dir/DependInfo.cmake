@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/connectdb.cpp" "CMakeFiles/prll_app.dir/connectdb.cpp.o" "gcc" "CMakeFiles/prll_app.dir/connectdb.cpp.o.d"
-  "/run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/main.cpp" "CMakeFiles/prll_app.dir/main.cpp.o" "gcc" "CMakeFiles/prll_app.dir/main.cpp.o.d"
+  "/run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/connectdb.cpp" "CMakeFiles/prll_app.dir/connectdb.cpp.o" "gcc" "CMakeFiles/prll_app.dir/connectdb.cpp.o.d"
+  "/run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/main.cpp" "CMakeFiles/prll_app.dir/main.cpp.o" "gcc" "CMakeFiles/prll_app.dir/main.cpp.o.d"
   "" "prll_app" "gcc" "CMakeFiles/prll_app.dir/link.d"
   )
 

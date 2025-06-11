@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /run/media/priyo/priyo/projects/parallel-iot-dashboard
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator
+CMAKE_BINARY_DIR = /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser
 
 # Include any dependencies generated for this target.
 include CMakeFiles/prll_app.dir/depend.make
@@ -75,30 +75,30 @@ CMakeFiles/prll_app.dir/codegen:
 CMakeFiles/prll_app.dir/main.cpp.o: CMakeFiles/prll_app.dir/flags.make
 CMakeFiles/prll_app.dir/main.cpp.o: main.cpp
 CMakeFiles/prll_app.dir/main.cpp.o: CMakeFiles/prll_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/prll_app.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/prll_app.dir/main.cpp.o -MF CMakeFiles/prll_app.dir/main.cpp.o.d -o CMakeFiles/prll_app.dir/main.cpp.o -c /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/prll_app.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/prll_app.dir/main.cpp.o -MF CMakeFiles/prll_app.dir/main.cpp.o.d -o CMakeFiles/prll_app.dir/main.cpp.o -c /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/main.cpp
 
 CMakeFiles/prll_app.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/prll_app.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/main.cpp > CMakeFiles/prll_app.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/main.cpp > CMakeFiles/prll_app.dir/main.cpp.i
 
 CMakeFiles/prll_app.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/prll_app.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/main.cpp -o CMakeFiles/prll_app.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/main.cpp -o CMakeFiles/prll_app.dir/main.cpp.s
 
 CMakeFiles/prll_app.dir/connectdb.cpp.o: CMakeFiles/prll_app.dir/flags.make
 CMakeFiles/prll_app.dir/connectdb.cpp.o: connectdb.cpp
 CMakeFiles/prll_app.dir/connectdb.cpp.o: CMakeFiles/prll_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/prll_app.dir/connectdb.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/prll_app.dir/connectdb.cpp.o -MF CMakeFiles/prll_app.dir/connectdb.cpp.o.d -o CMakeFiles/prll_app.dir/connectdb.cpp.o -c /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/connectdb.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/prll_app.dir/connectdb.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/prll_app.dir/connectdb.cpp.o -MF CMakeFiles/prll_app.dir/connectdb.cpp.o.d -o CMakeFiles/prll_app.dir/connectdb.cpp.o -c /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/connectdb.cpp
 
 CMakeFiles/prll_app.dir/connectdb.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/prll_app.dir/connectdb.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/connectdb.cpp > CMakeFiles/prll_app.dir/connectdb.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/connectdb.cpp > CMakeFiles/prll_app.dir/connectdb.cpp.i
 
 CMakeFiles/prll_app.dir/connectdb.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/prll_app.dir/connectdb.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/connectdb.cpp -o CMakeFiles/prll_app.dir/connectdb.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/connectdb.cpp -o CMakeFiles/prll_app.dir/connectdb.cpp.s
 
 # Object files for target prll_app
 prll_app_OBJECTS = \
@@ -119,7 +119,7 @@ prll_app: /usr/lib/libssl.so
 prll_app: /usr/lib/libcrypto.so
 prll_app: /usr/lib/libcurl.so
 prll_app: CMakeFiles/prll_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable prll_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable prll_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/prll_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -131,6 +131,6 @@ CMakeFiles/prll_app.dir/clean:
 .PHONY : CMakeFiles/prll_app.dir/clean
 
 CMakeFiles/prll_app.dir/depend:
-	cd /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /run/media/priyo/priyo/projects/parallel-iot-dashboard /run/media/priyo/priyo/projects/parallel-iot-dashboard /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/CMakeFiles/prll_app.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /run/media/priyo/priyo/projects/parallel-iot-dashboard /run/media/priyo/priyo/projects/parallel-iot-dashboard /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/CMakeFiles/prll_app.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/prll_app.dir/depend
 

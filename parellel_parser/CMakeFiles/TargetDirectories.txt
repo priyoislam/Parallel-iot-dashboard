@@ -1,3 +1,3 @@
-/run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/CMakeFiles/prll_app.dir
-/run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/CMakeFiles/edit_cache.dir
-/run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/CMakeFiles/rebuild_cache.dir
+/run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/CMakeFiles/prll_app.dir
+/run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/CMakeFiles/edit_cache.dir
+/run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/CMakeFiles/rebuild_cache.dir

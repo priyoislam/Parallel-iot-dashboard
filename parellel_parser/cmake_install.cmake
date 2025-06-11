@@ -45,7 +45,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/install_local_manifest.txt"
+  file(WRITE "/run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +61,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -1,5 +1,5 @@
 CMakeFiles/prll_app.dir/main.cpp.o: \
- /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/main.cpp \
+ /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/15.1.1/iostream \
  /usr/include/c++/15.1.1/bits/requires_hosted.h \
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -224,9 +224,9 @@ CMakeFiles/prll_app.dir/main.cpp.o: \
  /usr/include/c++/15.1.1/bits/uniform_int_dist.h \
  /usr/include/c++/15.1.1/pstl/glue_algorithm_defs.h \
  /usr/include/c++/15.1.1/queue /usr/include/c++/15.1.1/bits/stl_queue.h \
- /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/thread_pool.hpp \
- /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/concurrent_queue.hpp \
- /run/media/priyo/priyo/projects/parallel-iot-dashboard/iot_simulator/connectdb.hpp \
+ /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/thread_pool.hpp \
+ /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/concurrent_queue.hpp \
+ /run/media/priyo/priyo/projects/parallel-iot-dashboard/parellel_parser/connectdb.hpp \
  /usr/include/curl/curl.h /usr/include/curl/curlver.h \
  /usr/include/curl/system.h /usr/include/sys/socket.h \
  /usr/include/bits/types/struct_iovec.h /usr/include/bits/socket.h \
