@@ -59,9 +59,10 @@ docker-compose up -d
 ```
 
 
-# Iot_Data_Simulator
+# Run Parellel parser app
 
 ```bash
+cd parellel_parser
 cmake . .
 make
 ./prll_app
