@@ -23,13 +23,10 @@ Our system mimics a real-time smart city by simulating thousands of IoT sensors 
 ---
 
 
-
----
-
 ## Getting Started
 
 
-# Mosquitto MQTT(with Anonymous Access ), InfluxDB and Grafana Setup
+### Mosquitto MQTT(with Anonymous Access ), InfluxDB and Grafana Setup
 
 ```bash
 # Create config directory
@@ -46,16 +43,6 @@ docker-compose up -d
 ```
 
 
-# Run Parellel parser app
-
-```bash
-cd parellel_parser
-cmake ..    
-make
-./prll_app
-
-```
-
 ## Access Your Services
 
 Once you've started the Docker containers (e.g., using `docker compose up -d`), you can access the various components at the following addresses:
@@ -67,7 +54,14 @@ Once you've started the Docker containers (e.g., using `docker compose up -d`), 
     *(Default login: `admin`/`admin` - change this after your first login!)*
 * **MQTT Broker (Mosquitto):** `mqtt://localhost:1883` (for MQTT client connections)
 
+# Run Parellel parser app
 
+```bash
+cd parellel_parser
+cmake ..    
+make
+./prll_app
+```
 
 ## Tools
 
