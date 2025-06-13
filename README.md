@@ -1,11 +1,11 @@
-# Parallel IoT Data Simulation and Real-Time Dashboard Visualization
+# Real-Time IOT Data Visualisation
 
 **Group Members:**  
 Moinul Laskar (2404679) & Nicolas Ragnell (39168)
 
 ---
 
-## Project Overview
+## Project Overviews
 
 As smart cities evolve, efficient and scalable monitoring of environmental parameters such as temperature, humidity, and noise is essential. This project aims to build a system that simulates multiple IoT devices generating sensor data in parallel, processes the data concurrently, and visualizes it in real-time through an interactive dashboard.
 
@@ -62,22 +62,25 @@ make
 ./prll_app
 
 ```
+### Data Pipeline
+```bash
 
-IoT Data Pipeline:
-───────────────────────────────────────────────────────
-[IoT Sensors] ×1000s
+
+[IoT Sensors] (Thousands)
        │
-       ↓ (publish via MQTT topics)
+       ↓ (Publish via MQTT topics)
 [MQTT Broker] (e.g., Mosquitto)
        │
-       ↓ (subscribe with C++ app)
+       ↓ (Subscribe with C++ application)
 [C++ Application]
-   ├── Thread 1: Process Topic A → InfluxDB
-   ├── Thread 2: Process Topic B → InfluxDB
-   └── Thread N: ... (parallel processing)
+   ├── Thread 1: Process Data → InfluxDB
+   ├── Thread 2: Process Data → InfluxDB
+   └── ... (N parallel processing threads)
        │
-       ↓ (batch writes)
+       ↓ (Batch writes)
 [InfluxDB Time Series Database]
        │
-       ↓ (query)
+       ↓ (Query)
 [Grafana Dashboard] ← Real-time Visualization
+
+```
