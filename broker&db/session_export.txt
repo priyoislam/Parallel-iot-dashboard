@@ -1,0 +1,1 @@
+{"timestamp":1749829133062,"status":500,"error":"Internal Server Error","exception":"java.io.CharConversionException","message":"Not an ISO 8859-1 character: [₂]","path":"/v1/sessions/6838c83842fc51000713fe9b/export"}

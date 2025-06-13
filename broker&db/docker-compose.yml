@@ -27,6 +27,7 @@ services:
       - INFLUXDB_ADMIN_PASSWORD=password123
     volumes:
       - influxdb_data:/var/lib/influxdb
+      - ./influx_backup:/backup
     networks:
       - iot-network
 

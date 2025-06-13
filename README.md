@@ -63,3 +63,21 @@ make
 
 ```
 
+IoT Data Pipeline:
+───────────────────────────────────────────────────────
+[IoT Sensors] ×1000s
+       │
+       ↓ (publish via MQTT topics)
+[MQTT Broker] (e.g., Mosquitto)
+       │
+       ↓ (subscribe with C++ app)
+[C++ Application]
+   ├── Thread 1: Process Topic A → InfluxDB
+   ├── Thread 2: Process Topic B → InfluxDB
+   └── Thread N: ... (parallel processing)
+       │
+       ↓ (batch writes)
+[InfluxDB Time Series Database]
+       │
+       ↓ (query)
+[Grafana Dashboard] ← Real-time Visualization
