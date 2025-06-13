@@ -22,14 +22,7 @@ Our system mimics a real-time smart city by simulating thousands of IoT sensors 
 
 ---
 
-## Tools and Technologies
 
-- **Programming Language:** C++
-- **Parallelism:** Threads 
-- **IoT Simulation:** IBA-iot-data-simulator
-- **Message Broker:** MQTT (Mosquitto)
-- **Database:** InfluxDB
-- **Dashboard Platform:** Grafana
 
 ---
 
@@ -57,11 +50,35 @@ docker-compose up -d
 
 ```bash
 cd parellel_parser
-cmake ..    #as Cmakelist in root folder
+cmake ..    
 make
 ./prll_app
 
 ```
+
+## Access Your Services
+
+Once you've started the Docker containers (e.g., using `docker compose up -d`), you can access the various components at the following addresses:
+
+* **InfluxDB:**
+    * **API Endpoint (1.8):** `http://localhost:8086`
+        *(Note: InfluxDB 1.8 doesn't have a web UI at the root `/`; access its API endpoints like `/ping` or `/write` directly.)*
+* **Grafana Dashboard:** `http://localhost:3000`
+    *(Default login: `admin`/`admin` - change this after your first login!)*
+* **MQTT Broker (Mosquitto):** `mqtt://localhost:1883` (for MQTT client connections)
+
+
+
+## Tools
+
+- **Programming Language:** C++
+- **Parallelism:** Threads 
+- **IoT Simulation:** IBA-iot-data-simulator
+- **Message Broker:** MQTT (Mosquitto)
+- **Database:** InfluxDB
+- **Dashboard Platform:** Grafana
+
+
 ### Data Pipeline
 ```bash
 
