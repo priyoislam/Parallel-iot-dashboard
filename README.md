@@ -54,7 +54,7 @@ Once you've started the Docker containers (e.g., using `docker compose up -d`), 
     *(Default login: `admin`/`admin` - change this after your first login!)*
 * **MQTT Broker (Mosquitto):** `mqtt://localhost:1883` (for MQTT client connections)
 
-# Run Parellel parser app
+## Run Parellel parser app
 
 ```bash
 cd parellel_parser
@@ -73,7 +73,7 @@ make
 - **Dashboard Platform:** Grafana
 
 
-### Data Pipeline
+## Data Pipeline
 ```bash
 
 
@@ -95,3 +95,7 @@ make
 [Grafana Dashboard] ← Real-time Visualization
 
 ```
+
+## Dashboard
+
+![alt text](image.png)
